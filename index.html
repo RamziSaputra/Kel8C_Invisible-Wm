@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible Watermarking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Invisible Watermarking</h1>
+        <div class="explanation">
+            <h2>Apa Itu Invisible Watermarking?</h2>
+            <p>Invisible watermarking adalah teknik yang digunakan untuk menyisipkan informasi digital ke dalam konten multimedia, seperti gambar atau video, dengan cara yang tidak terlihat oleh mata manusia namun dapat dideteksi atau diekstrak oleh algoritma atau perangkat lunak tertentu. Berbeda dengan watermark yang terlihat, yang biasanya diletakkan di atas konten dan dapat dengan mudah dihapus atau diubah, invisible watermarking disisipkan ke dalam konten itu sendiri tanpa secara signifikan memengaruhi penampilannya secara visual.</p>
+            <h2>Bagaimana Cara Kerjanya?</h2>
+            <p>Invisible watermarking bekerja dengan cara mengubah data konten multimedia secara halus, seperti memodifikasi nilai piksel dalam sebuah gambar atau memanipulasi sampel audio dalam sebuah file suara, untuk menyandikan informasi tersembunyi. Perubahan ini biasanya dilakukan dengan cara yang tidak terlihat oleh indera manusia atau dapat disembunyikan sebagai noise atau distorsi dalam konten. Informasi yang disisipkan dapat mencakup metadata, detail hak cipta, informasi kepemilikan, atau penanda identifikasi lainnya.</p>
+            <h2>Aplikasi Invisible Watermarking</h2>
+            <p>Invisible watermarking memiliki berbagai aplikasi dalam manajemen hak digital (DRM), otentikasi konten, perlindungan hak cipta, dan forensik digital. Ini memungkinkan pencipta konten, distributor, dan pemegang hak untuk menyisipkan dan memverifikasi informasi kepemilikan atau otentisitas dalam file multimedia, membantu mencegah penggunaan, distribusi, atau manipulasi konten digital tanpa izin.</p>
+        </div>        
+        <div class="input-group">
+            <label for="mainImage" class="file-label">Upload Main Image</label>
+            <input type="file" id="mainImage" accept="image/*">
+        </div>
+        <div class="input-group">
+            <label for="watermarkImage" class="file-label">Upload Watermark Image</label>
+            <input type="file" id="watermarkImage" accept="image/*">
+        </div>
+        <button class="btn" onclick="applyWatermark()">Apply Watermark</button>
+        <canvas id="canvas"></canvas>
+        <button id="downloadBtn" class="btn" onclick="downloadImage()">Download Watermarked Image</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
